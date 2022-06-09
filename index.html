@@ -23,11 +23,15 @@
         >
         <nav>
           <ul class="nav-list">
-            <li class="nav-list-item"><a href="#">Agencja</a></li>
             <li class="nav-list-item">
-              <a href="portfolio.html">Portfolio</a>
+              <a class="nav-link active" href="/index.html">Agencja</a>
             </li>
-            <li class="nav-list-item"><a href="#K">Kontakt</a></li>
+            <li class="nav-list-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-link" href="#">Kontakt</a>
+            </li>
           </ul>
         </nav>
         <ul class="contact-list">
@@ -58,7 +62,9 @@
             <h1 class="slogan-text">
               EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
             </h1>
-            <button class="slogan-button" type="button">Zamów usługe</button>
+            <button class="slogan-button" type="button" data-modal-open>
+              Zamów usługe
+            </button>
           </div>
         </div>
       </section>
@@ -127,28 +133,37 @@
           <h2 class="offer-caption">Czym się zajmujemy</h2>
           <ul class="list-offer">
             <li>
-              <img
-                src="image/photo_one.jpg"
-                alt="creating pages"
-                width="370"
-                height="294"
-              />
+              <div class="overlay">
+                <img
+                  src="image/photo_one.jpg"
+                  alt="creating pages"
+                  width="370"
+                  height="294"
+                />
+                <p class="overlay-text font-overlay">Aplikacje komputerowe</p>
+              </div>
             </li>
             <li>
-              <img
-                src="image/photo_two.jpg"
-                alt="test of the mobile application"
-                width="370"
-                height="294"
-              />
+              <div class="overlay">
+                <img
+                  src="image/photo_two.jpg"
+                  alt="test of the mobile application"
+                  width="370"
+                  height="294"
+                />
+                <p class="overlay-text font-overlay">Aplikacje mobilne</p>
+              </div>
             </li>
             <li>
-              <img
-                src="image/photo_three.jpg"
-                alt="choosing colors for the website"
-                width="370"
-                height="294"
-              />
+              <div class="overlay">
+                <img
+                  src="image/photo_three.jpg"
+                  alt="choosing colors for the website"
+                  width="370"
+                  height="294"
+                />
+                <p class="overlay-text font-overlay">Rozwiązania graficzne</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -456,5 +471,12 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-bth" data-modal-close>X</button>
+      </div>
+    </div>
+    <script src="/js/modal.js"></script>
   </body>
 </html>

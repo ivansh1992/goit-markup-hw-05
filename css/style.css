@@ -72,13 +72,20 @@ ul {
   margin-left: 93px;
 }
 .nav-list-item {
-  display: inline;
+  display: inline-block;
 }
 .nav-list-item:nth-child(2) {
   padding-right: 46px;
   padding-left: 46px;
 }
-
+.active::after {
+  content: "";
+  display: block;
+  position: relative;
+  border-top: 4px solid var(--color-variable);
+  border-radius: 2px;
+  top: 30px;
+}
 .contact-list {
   list-style: none;
   font-family: "Roboto";
@@ -118,6 +125,7 @@ ul {
 }
 .slogan {
   text-align: center;
+  padding-top: 0;
 }
 .slogan-image {
   max-width: 1600px;
@@ -159,6 +167,7 @@ ul {
   justify-content: center;
   padding-left: 0;
   padding-right: 0;
+  padding-top: 0;
 }
 .advantages-list {
   list-style: none;
@@ -219,6 +228,34 @@ ul {
   letter-spacing: 0.03em;
   color: var(--color-title);
   padding-bottom: 50px;
+  margin: 0;
+}
+
+.overlay {
+  position: relative;
+  
+ 
+}
+.overlay-text {
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  bottom: 4px;
+  margin: 0;
+  padding-top: 27px;
+}
+.font-overlay {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-slogan);
+  display: block;
+  justify-content: center;
+  align-items: center;
 }
 .team {
   background: #f5f4fa;
@@ -233,6 +270,8 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-title);
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 .team-list {
   list-style: none;
@@ -244,6 +283,7 @@ ul {
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--color-text);
+  padding-top: 0;
 }
 
 figure {
