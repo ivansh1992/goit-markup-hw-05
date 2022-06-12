@@ -67,7 +67,6 @@
             </button>
           </div>
         </div>
-        
       </section>
 
       <section class="advantages section">
@@ -133,37 +132,35 @@
         <div class="container">
           <h2 class="offer-caption">Czym się zajmujemy</h2>
           <ul class="list-offer">
-            <li>
-              <div class="overlay">
-                <img
-                  src="image/photo_one.jpg"
-                  alt="creating pages"
-                  width="370"
-                  height="294"
-                />
-                <p class="overlay-text font-overlay">Aplikacje komputerowe</p>
+            <li class="list-offer-item">
+              <img
+                src="image/photo_one.jpg"
+                alt="creating pages"
+                width="370"
+                height="294"
+              />
+              <div class="list-offer-item-description">
+                Aplikacje komputerowe
               </div>
             </li>
-            <li>
-              <div class="overlay">
-                <img
-                  src="image/photo_two.jpg"
-                  alt="test of the mobile application"
-                  width="370"
-                  height="294"
-                />
-                <p class="overlay-text font-overlay">Aplikacje mobilne</p>
-              </div>
+            <li class="list-offer-item">
+              <img
+                src="image/photo_two.jpg"
+                alt="test of the mobile application"
+                width="370"
+                height="294"
+              />
+              <div class="list-offer-item-description">Aplikacje mobilne</div>
             </li>
-            <li>
-              <div class="overlay">
-                <img
-                  src="image/photo_three.jpg"
-                  alt="choosing colors for the website"
-                  width="370"
-                  height="294"
-                />
-                <p class="overlay-text font-overlay">Rozwiązania graficzne</p>
+            <li class="list-offer-item">
+              <img
+                src="image/photo_three.jpg"
+                alt="choosing colors for the website"
+                width="370"
+                height="294"
+              />
+              <div class="list-offer-item-description">
+                Rozwiązania graficzne
               </div>
             </li>
           </ul>
@@ -472,7 +469,15 @@
         </div>
       </div>
     </footer>
-
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-bth" data-modal-close>
+          <svg class="x">
+            <use href="./image/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <script src="/js/modal.js"></script>
   </body>
 </html>
